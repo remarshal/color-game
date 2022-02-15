@@ -1,10 +1,15 @@
 .squares {
-    background-color: blueviolet;
+    background-color: rgb(138, 43, 226);
     width: 30%;
     margin: 1.66%;
     float: left;
     padding-bottom: 30%;
     border-radius: 10%;
+}
+
+.game-area {
+    max-width: 600px;
+    margin: auto;
 }
 
 h1 {
