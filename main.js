@@ -8,6 +8,20 @@ const colors = [
 ];
 
 const squares = document.getElementsByClassName('squares')
+
 for (let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
+    squares[i].addEventListener("click", function () {
+        if (this === chosenSquare) {
+            alert('you win');
+            for (let i = 0; i < squares.length; i++) {
+                squares[i].style.backgroundColor = chosenColor
+            };
+        } else {
+            this.style.backgroundColor = 'white';
+        }
+    })
 }
+
+const chosenSquare = squares[0];
+const chosenColor = chosenSquare.style.backgroundColor
