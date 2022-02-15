@@ -13,7 +13,8 @@ for (let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
     squares[i].addEventListener("click", function () {
         if (this === chosenSquare) {
-            alert('you win');
+            const message = document.querySelector('h1').textContent = 'WINNER WINNER WINNER!'
+            document.querySelector('h2').innerHTML = 'You guessed in <span id="numTries">2</span> tries'
             for (let i = 0; i < squares.length; i++) {
                 squares[i].style.backgroundColor = chosenColor
             };
