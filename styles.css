@@ -1,0 +1,22 @@
+.squares {
+    background-color: blueviolet;
+    width: 30%;
+    margin: 1.66%;
+    float: left;
+    padding-bottom: 30%;
+    border-radius: 10%;
+}
+
+h1 {
+    color: rgb(80, 205, 255);
+    text-align: center;
+}
+h2 {
+    color: rgb(80, 205, 255);
+    text-align: center;
+}
+h3 {
+    color: rgb(80, 205, 255);
+    text-align: center;
+    background-color: black;
+}
