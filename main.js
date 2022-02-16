@@ -7,16 +7,22 @@ const colors = [
     'rgb(138, 43, 226)'
 ];
 
-const squares = document.getElementsByClassName('squares')
+// Global variables
+const squares = document.getElementsByClassName('squares');
+let numGuess = 0;
 
+// Assign square colors
 for (let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
     squares[i].addEventListener("click", function () {
+        // count number of clicks
+        numGuess += 1;
+        // Assign game behaviors
         if (this === chosenSquare) {
-            const message = document.querySelector('h1').textContent = 'WINNER WINNER WINNER!'
-            document.querySelector('h2').innerHTML = 'You guessed in <span id="numTries">2</span> tries'
+            const message = document.querySelector('h1').textContent = 'WINNER WINNER WINNER!';
+            document.querySelector('h2').innerHTML = 'You guessed in ' + numGuess + ' tries';
             for (let i = 0; i < squares.length; i++) {
-                squares[i].style.backgroundColor = chosenColor
+                squares[i].style.backgroundColor = chosenColor;
             };
         } else {
             this.style.backgroundColor = 'white';
@@ -24,5 +30,11 @@ for (let i = 0; i < squares.length; i++) {
     })
 }
 
-const chosenSquare = squares[0];
-const chosenColor = chosenSquare.style.backgroundColor
+// Winning square
+const randomSquare = Math.floor(Math.random() * 6);
+const chosenSquare = squares[randomSquare];
+console.log("winning square is " + (randomSquare + 1));
+
+// Color of winning square
+const chosenColor = chosenSquare.style.backgroundColor;
+
