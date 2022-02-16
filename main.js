@@ -19,7 +19,9 @@ for (let i = 0; i < squares.length; i++) {
         numGuess += 1;
         // Assign game behaviors
         if (this === chosenSquare) {
-            const message = document.querySelector('h1').textContent = 'WINNER WINNER WINNER!';
+            const message = document.querySelector('h1')
+            message.textContent = 'WINNER WINNER WINNER!';
+            message.classList.add('make-red');
             document.querySelector('h2').innerHTML = 'You guessed in ' + numGuess + ' tries';
             for (let i = 0; i < squares.length; i++) {
                 squares[i].style.backgroundColor = chosenColor;

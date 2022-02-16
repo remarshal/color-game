@@ -24,6 +24,13 @@
     font-size: xx-large;
 }
 
+.make-red {
+    color: red;
+    text-align: center;
+    font-size: xxx-large;
+    font-family: cursive;
+}
+
 h1 {
     color: rgb(138, 43, 226);
     text-align: center;
@@ -36,6 +43,7 @@ h2 {
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
+    margin-bottom: 50px;
 }
 
 h3 {
@@ -44,4 +52,5 @@ h3 {
     font-size: x-large;
     background-color: black;
     font-family: cursive;
+    margin-bottom: 50px;
 }
