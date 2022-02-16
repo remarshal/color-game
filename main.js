@@ -24,6 +24,15 @@ for (let i = 0; i < squares.length; i++) {
             for (let i = 0; i < squares.length; i++) {
                 squares[i].style.backgroundColor = chosenColor;
             };
+            // start over button
+            const resetBtn = document.createElement('button');
+            resetBtn.innerText = 'Start Over?';
+            resetBtn.classList.add('reset-btn');
+            document.querySelector('h3').replaceWith(resetBtn)
+            // start over button reload page
+            resetBtn.addEventListener('click', function () {
+                location.reload();
+            })
         } else {
             this.style.backgroundColor = 'white';
         }
@@ -37,4 +46,4 @@ console.log("winning square is " + (randomSquare + 1));
 
 // Color of winning square
 const chosenColor = chosenSquare.style.backgroundColor;
-document.querySelector('h2').textContent = 'Which color is ' + chosenColor + ' ?'
+document.querySelector('h2').textContent = chosenColor

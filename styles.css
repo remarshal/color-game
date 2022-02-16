@@ -12,16 +12,36 @@
     margin: auto;
 }
 
+.reset-btn {
+    width: 30%;
+    margin: 20px 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(1, 69, 255);
+    color: white;
+    border-radius: .5em;
+    font-size: xx-large;
+}
+
 h1 {
     color: rgb(138, 43, 226);
     text-align: center;
+    font-size: xxx-large;
+    font-family: cursive;
 }
+
 h2 {
     color: rgb(80, 205, 255);
     text-align: center;
+    font-size: xxx-large;
+    font-family: cursive;
 }
+
 h3 {
     color: rgb(80, 205, 255);
     text-align: center;
+    font-size: x-large;
     background-color: black;
+    font-family: cursive;
 }
