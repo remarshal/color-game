@@ -61,8 +61,4 @@ document.querySelector('h2').textContent = chosenColor
 console.log(chosenColor)
 
 // Blinking start instructions
-setInterval(function () { document.querySelector('h3').classList.toggle('make-black') }, 1000);
-
-
-
-
+setInterval(function () { document.querySelector('h3').classList.toggle('make-black') }, 750);
