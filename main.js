@@ -20,8 +20,10 @@ for (let i = 0; i < squares.length; i++) {
         // Assign game behaviors
         if (this === chosenSquare) {
             const message = document.querySelector('h1')
+            // winning message
             message.textContent = 'WINNER WINNER WINNER!';
-            message.classList.add('make-red');
+            // toogle colors
+            setInterval(function () {message.classList.toggle('make-red')}, 1000);
             document.querySelector('h2').innerHTML = 'You guessed in ' + numGuess + ' tries';
             for (let i = 0; i < squares.length; i++) {
                 squares[i].style.backgroundColor = chosenColor;
@@ -49,3 +51,5 @@ console.log("winning square is " + (randomSquare + 1));
 // Color of winning square
 const chosenColor = chosenSquare.style.backgroundColor;
 document.querySelector('h2').textContent = chosenColor
+
+

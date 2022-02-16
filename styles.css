@@ -16,6 +16,7 @@
     width: 30%;
     margin: 20px 20px;
     position: relative;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(1, 69, 255);
@@ -29,6 +30,11 @@
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
+}
+
+.msgCenter {
+    background-color: black;
+    padding: 15px;
 }
 
 h1 {
@@ -50,7 +56,5 @@ h3 {
     color: rgb(80, 205, 255);
     text-align: center;
     font-size: x-large;
-    background-color: black;
     font-family: cursive;
-    margin-bottom: 50px;
 }
