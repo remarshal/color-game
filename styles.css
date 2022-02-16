@@ -14,9 +14,8 @@
 
 .reset-btn {
     width: 30%;
-    margin: 20px 20px;
+    margin-top: 40px;
     position: relative;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(1, 69, 255);
@@ -30,15 +29,18 @@
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
+    display: flex;
+align-items: center;
 }
 
 .msgCenter {
     background-color: black;
     padding: 15px;
+    margin: 20px;
 }
 
 h1 {
-    color: rgb(138, 43, 226);
+    background-image: linear-gradient(to right, rgb(80, 205, 255),rgb(138, 43, 226) );
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
@@ -56,5 +58,15 @@ h3 {
     color: rgb(80, 205, 255);
     text-align: center;
     font-size: x-large;
+    font-family: cursive;
+}
+
+footer {
+    background-image: linear-gradient(to right, rgb(80, 205, 255),rgb(138, 43, 226) );
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 20px;
     font-family: cursive;
 }
