@@ -1,11 +1,12 @@
-const colors = [
-    'rgb(255, 255, 0)',
-    'rgb(255, 0, 0)',
-    'rgb(0, 255, 0)',
-    'rgb(0, 0, 255)',
-    'rgb(0, 255, 255)',
-    'rgb(138, 43, 226)'
-];
+// generate random color
+const generateRandomColor = () => {
+    // pick r, g, b values between 0-255
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    // template strings
+    return `rgb(${r}, ${g}, ${b})`;
+}
 
 // Global variables
 const squares = document.getElementsByClassName('squares');
@@ -13,7 +14,7 @@ let numGuess = 0;
 
 // Assign square colors
 for (let i = 0; i < squares.length; i++) {
-    squares[i].style.backgroundColor = colors[i];
+    squares[i].style.backgroundColor = generateRandomColor();
     squares[i].addEventListener("click", function () {
         // count number of clicks
         numGuess += 1;
@@ -44,16 +45,18 @@ for (let i = 0; i < squares.length; i++) {
 }
 
 // Winning square
-const randomSquare = Math.floor(Math.random() * 6);
+const randomSquare = Math.floor(Math.random() * squares.length);
 const chosenSquare = squares[randomSquare];
 console.log("winning square is " + (randomSquare + 1));
 
 // Color of winning square
 const chosenColor = chosenSquare.style.backgroundColor;
 document.querySelector('h2').textContent = chosenColor
+console.log(chosenColor)
 
 // Blinking start instructions
-setInterval(function () {document.querySelector('h3').classList.toggle('make-black')}, 1000);
+setInterval(function () { document.querySelector('h3').classList.toggle('make-black') }, 1000);
+
 
 
 
