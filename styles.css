@@ -29,8 +29,10 @@
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
-    display: flex;
-align-items: center;
+}
+
+.make-black {
+    color: black;
 }
 
 .msgCenter {

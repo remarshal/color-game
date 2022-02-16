@@ -52,4 +52,8 @@ console.log("winning square is " + (randomSquare + 1));
 const chosenColor = chosenSquare.style.backgroundColor;
 document.querySelector('h2').textContent = chosenColor
 
+// Blinking start instructions
+setInterval(function () {document.querySelector('h3').classList.toggle('make-black')}, 1000);
+
+
 
