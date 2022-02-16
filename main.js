@@ -37,4 +37,4 @@ console.log("winning square is " + (randomSquare + 1));
 
 // Color of winning square
 const chosenColor = chosenSquare.style.backgroundColor;
-
+document.querySelector('h2').textContent = 'Which color is ' + chosenColor + ' ?'
