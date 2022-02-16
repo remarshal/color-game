@@ -24,7 +24,7 @@ for (let i = 0; i < squares.length; i++) {
             // winning message
             message.textContent = 'WINNER WINNER WINNER!';
             // toogle colors
-            setInterval(function () { message.classList.toggle('make-red') }, 1000);
+            setInterval(function () { message.classList.toggle('make-black') }, 1000);
             // total guesses
             document.querySelector('h2').innerHTML = 'You guessed in ' + numGuess + ' tries';
             // set squares to winning color

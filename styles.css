@@ -14,7 +14,7 @@
 
 .reset-btn {
     width: 30%;
-    /* margin-top: 10px; */
+    margin: 20px;
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -22,13 +22,6 @@
     color: white;
     border-radius: .5em;
     font-size: xx-large;
-}
-
-.make-red {
-    color: black;
-    text-align: center;
-    font-size: xxx-large;
-    font-family: cursive;
 }
 
 .make-black {
@@ -55,7 +48,7 @@ h2 {
 h3 {
     color: rgb(138, 43, 226);
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large;
     font-family: cursive;
 }
 
