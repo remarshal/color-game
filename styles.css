@@ -14,7 +14,7 @@
 
 .reset-btn {
     width: 30%;
-    margin-top: 40px;
+    /* margin-top: 10px; */
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -25,7 +25,7 @@
 }
 
 .make-red {
-    color: red;
+    color: black;
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
@@ -35,14 +35,8 @@
     color: black;
 }
 
-.msgCenter {
-    background-color: black;
-    padding: 15px;
-    margin: 20px;
-}
-
 h1 {
-    background-image: linear-gradient(to right, rgb(80, 205, 255),rgb(138, 43, 226) );
+    background-color: rgb(138, 43, 226);
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
@@ -52,21 +46,22 @@ h1 {
 }
 
 h2 {
-    color: rgb(80, 205, 255);
+    /* color: rgb(138, 43, 226); */
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
 }
 
 h3 {
-    color: rgb(80, 205, 255);
+    color: rgb(138, 43, 226);
     text-align: center;
     font-size: x-large;
     font-family: cursive;
 }
 
 footer {
-    background-image: linear-gradient(to right, rgb(80, 205, 255),rgb(138, 43, 226) );
+    background-color: rgb(138, 43, 226);
+    /* background-image: linear-gradient(to right, rgb(80, 205, 255),rgb(138, 43, 226) ); */
     float: left;
     width: 100%;
     text-align: center;

@@ -24,11 +24,17 @@ for (let i = 0; i < squares.length; i++) {
             // winning message
             message.textContent = 'WINNER WINNER WINNER!';
             // toogle colors
-            setInterval(function () {message.classList.toggle('make-red')}, 1000);
+            setInterval(function () { message.classList.toggle('make-red') }, 1000);
+            // total guesses
             document.querySelector('h2').innerHTML = 'You guessed in ' + numGuess + ' tries';
+            // set squares to winning color
             for (let i = 0; i < squares.length; i++) {
                 squares[i].style.backgroundColor = chosenColor;
             };
+            // set winning color to text and backgrounds
+            document.querySelector('h1').style.backgroundColor = chosenColor;
+            document.querySelector('h2').style.color = chosenColor;
+            document.querySelector('footer').style.backgroundColor = chosenColor;
             // start over button
             const resetBtn = document.createElement('button');
             resetBtn.innerText = 'Start Over?';
