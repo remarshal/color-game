@@ -1,5 +1,5 @@
 h1 {
-    background-color: rgb(138, 43, 226);
+    background-color: #d90429;
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
@@ -9,22 +9,20 @@ h1 {
 }
 
 h2 {
-    /* color: rgb(138, 43, 226); */
     text-align: center;
     font-size: xxx-large;
     font-family: cursive;
 }
 
 h3 {
-    color: rgb(138, 43, 226);
+    color: rgb(1, 69, 255);
     text-align: center;
     font-size: xx-large;
     font-family: cursive;
 }
 
 footer {
-    background-color: rgb(138, 43, 226);
-    /* background-image: linear-gradient(to right, rgb(80, 205, 255),rgb(138, 43, 226) ); */
+    background-color: #d90429;
     float: left;
     width: 100%;
     text-align: center;
@@ -38,7 +36,6 @@ a {
 }
 
 .squares {
-    background-color: rgb(138, 43, 226);
     width: 30%;
     margin: 1.66%;
     float: left;
